@@ -1,0 +1,150 @@
+.footer {
+  padding: 130px 0 100px;
+  border-top: 1px solid $gray;
+  &.base {
+    border: unset;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &-logo {
+      width: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    &-side {
+      p {
+        font-size: 13px;
+        line-height: 100%;
+        color: $gray;
+        text-align: end;
+      }
+    }
+    &-contact {
+        display: flex;
+        align-items: center;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      hr {
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: $black;
+        margin: 0 10px;
+      }
+      a {
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 400;
+        color: $black;
+        &:hover {
+          opacity: 1;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+// 1180px
+@mixin footer-xlg-xxlg {
+  .footer {
+    padding: 80px 0;
+    &__inner {
+      &-logo {
+        width: 200px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin footer-lg-xlg {
+  .footer {
+  }
+}
+// 930px
+@mixin footer-md-lg {
+  .footer {
+    padding: 50px 0;
+    &__inner {
+        flex-direction: column;
+        align-items: flex-start;
+      &-logo {
+        width: 170px;
+        margin-bottom: 40px;
+      }
+      &-side {
+        width: 100%;
+      }
+      &-links {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+// 750px
+@mixin footer-sm-md {
+  .footer {
+  }
+}
+// 650px
+@mixin footer-sm-md-extra {
+  .footer {
+    padding: 35px 0;
+    &__inner {
+        align-items: center;
+      &-logo {
+        width: 130px;
+        margin-bottom: 20px;
+      }
+      &-side {
+        width: 100%;
+        flex-direction: column;
+         p {
+            text-align: center;
+            font-size: 12px;
+         }
+      }
+      &-contact {
+        width: 100%;
+        margin-bottom: 12px;
+        justify-content: center;
+        hr {
+            &:last-of-type {
+                display: none;
+            }
+        }
+      }
+      &-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        a {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+        hr {
+            margin: 0 6px;
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+  }
+}
+// 390px
+@mixin footer-xxxsm-xxsm {
+  .footer {
+  }
+}

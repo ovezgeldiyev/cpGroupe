@@ -1,0 +1,297 @@
+.intro {
+  &__bg {
+    position: relative;
+    padding-bottom: 32%;
+    min-height: 260px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fullImage;
+      animation: sizing 15s ease-out both;
+      transform-origin: 0 50%;
+    }
+  }
+}
+.contact {
+  padding: 100px 0 150px;
+  &__inner {
+    &-title {
+      margin-bottom: 40px;
+      p {
+        max-width: 430px;
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc(50% - 15px);
+      a {
+        color: $black;
+        font-weight: 700;
+        &:hover {
+          opacity: 1;
+          color: $primary;
+        }
+      }
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: calc(50% - 15px);
+      a {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        &:hover {
+          opacity: 1;
+          svg {
+            color: $gray;
+          }
+        }
+        &.big {
+          width: 28px;
+          height: 26px;
+        }
+        &:last-child {
+          margin: 0;
+        }
+        svg {
+          width: 100%;
+          height: 100%;
+          color: $black;
+          transition: 0.3s ease;
+          object-fit: contain;
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+// 1380px
+@mixin contact-xxxlg-xxxxlg {
+  .contact {
+    padding: 80px 0 120px;
+  }
+}
+// 1250px
+@mixin contact-xlg-xxlg-extra {
+  .contact {
+  }
+}
+// 1180px
+@mixin contact-xlg-xxlg {
+  .contact {
+  }
+}
+// 1024px
+@mixin contact-lg-xlg {
+  .contact {
+    padding: 60px 0 80px;
+    &__inner {
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+// 930px
+@mixin contact-md-lg {
+  .contact {
+  }
+}
+// 750px
+@mixin contact-sm-md {
+  .contact {
+  }
+}
+// 650px
+@mixin contact-sm-md-extra {
+  .contact {
+  }
+}
+// 540px
+@mixin contact-xsm-sm {
+  .contact {
+    padding: 40px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-row {
+        flex-direction: column;
+      }
+      &-info {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &-social {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+// 440px
+@mixin contact-xxsm-xsm {
+  .contact {
+  }
+}
+.offices {
+  padding: 110px 0 160px;
+  background-color: #fafafa;
+  &__inner {
+    &-title {
+      margin-bottom: 60px;
+    }
+    &-row {
+      max-width: 1460px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-col {
+      width: calc(25% - 15px);
+      max-width: 260px;
+      h5 {
+        margin-bottom: 25px;
+        color: $black;
+        text-transform: uppercase;
+      }
+      p {
+        margin-bottom: 26px;
+      }
+      a {
+        color: $black;
+      }
+    }
+    &-map {
+      text-decoration: underline;
+      &:hover {
+        opacity: 1;
+        color: $primary;
+      }
+    }
+    &-links {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      a {
+        &:hover {
+          opacity: 1;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin offices-xxxlg-xxxxlg {
+  .offices {
+    padding: 90px 0 130px;
+  }
+}
+// 1250px
+@mixin offices-xlg-xxlg-extra {
+  .offices {
+  }
+}
+// 1180px
+@mixin offices-xlg-xxlg {
+  .offices {
+    padding: 70px 0 90px;
+    &__inner {
+      &-title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin offices-lg-xlg {
+  .offices {
+  }
+}
+// 930px
+@mixin offices-md-lg {
+  .offices {
+    padding: 60px 0 40px;
+    &__inner {
+      &-row {
+        flex-wrap: wrap;
+      }
+      &-col {
+        width: calc(50% - 15px);
+        max-width: 300px;
+        margin-bottom: 40px;
+        h5 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 15px;
+        }
+      }
+      &-links {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// 750px
+@mixin offices-sm-md {
+  .offices {
+  }
+}
+// 650px
+@mixin offices-sm-md-extra {
+  .offices {
+  }
+}
+// 540px
+@mixin offices-xsm-sm {
+  .offices {
+    padding: 50px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+      }
+      &-row {
+        flex-direction: column;
+      }
+      &-col {
+        width: 100%;
+        max-width: unset;
+        margin: 0 0 30px 0;
+        &:last-child {
+          margin: 0;
+        }
+        p {
+          font-size: 18px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+// 440px
+@mixin offices-xxsm-xsm {
+  .offices {
+  }
+}

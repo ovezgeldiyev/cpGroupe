@@ -1,0 +1,335 @@
+.project {
+  padding: 80px 0 200px;
+  &__inner {
+    &-top {
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: calc(100% - 420px);
+      max-width: 1100px;
+      margin: 0 -6px;
+    }
+    &-selects {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      width: calc(100% - 370px);
+      margin-right: 12px;
+    }
+    &-filters {
+      display: flex;
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -9px;
+      padding-bottom: 70px;
+    }
+    &-foot {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 48px;
+        height: 48px;
+        background-color: $white;
+        transition: 0.3s ease;
+        border: 1px solid $gray;
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+        &:last-child  {
+          margin: 0;
+        }
+        &:hover {
+          opacity: 0.7;
+          background-color: transparent;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 20px;
+          height: 10px;
+          content: "";
+          background: url("../images/icons/arrow-left.svg") no-repeat center;
+          background-size: contain;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+        }
+        &.next {
+          &::before {
+            background: url("../images/icons/arrow-right.svg") no-repeat center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    .select,
+    .button {
+      margin: 6px;
+    }
+  }
+  &Card {
+    margin: 30px 9px;
+    width: calc(33.3% - 18px);
+    display: block;
+    &:hover {
+      opacity: 1;
+      img {
+        transform: scale(1.05);
+      }
+      .projectCard{
+        &__overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      h6 {
+        color: $black;
+      }
+    }
+    &__image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56%;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+        transition: 0.3s ease;
+      }
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.3);
+      padding: 50px;
+      color: $white;
+      transition: .3s ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      h4 {
+        margin-bottom: 5px;
+        color: $white;
+        text-transform: uppercase;
+        transition: .3s ease;
+      }
+      p {
+        transition: .3s ease;
+
+      }
+    }
+    &__content {
+      padding-top: 14px;
+    }
+    h6 {
+      font-weight: 400;
+      margin-bottom: 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &.light {
+        color: $gray;
+      }
+    }
+  }
+}
+// 1380px
+@mixin project-xxxlg-xxxxlg {
+  .project {
+    padding: 70px 0 160px;
+    &__inner {
+      &-top {
+        margin-bottom: 40px;
+      }
+      &-buttons {
+        width: calc(100% - 280px);
+      }
+      &-selects {
+        width: calc(100% - 320px);
+
+      }
+    }
+    &Card {
+      margin: 20px 9px;
+      &__overlay {
+        padding: 30px;
+      }
+    }
+  }
+}
+// 1250px
+@mixin project-xlg-xxlg-extra {
+  .project {
+  }
+}
+// 1180px
+@mixin project-xlg-xxlg {
+  .project {
+    padding: 60px 0 120px;
+    &__inner {
+      &-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &-buttons {
+        width: calc(100% + 12px);
+        padding-top: 30px;
+      }
+      &-selects {
+        width: calc(100% - 270px);
+        max-width: 550px;
+        margin-right: 6px;
+      }
+      &-row {
+        padding-bottom: 40px;
+      }
+      &-foot {
+        button {
+          width: 38px;
+          height: 38px;
+          margin-right: 14px;
+          &::before {
+            width: 16px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin project-lg-xlg {
+  .project {
+    &__inner {
+      &-row {
+        margin: 0 -5px;
+      }
+    }
+    &Card {
+      width: calc(33.3% - 10px);
+      margin: 15px 5px;
+    }
+  }
+}
+// 930px
+@mixin project-md-lg {
+  .project {
+    padding: 50px 0 80px;
+    &__inner {
+      &-top {
+        margin-bottom: 30px;
+      }
+      &-buttons {
+        padding-top: 20px;
+      }
+      &-selects {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+      &-filters {
+        width: 100%;
+        justify-content: flex-end;
+      }
+      &-row {
+        margin: 0 -5px;
+        padding-bottom: 30px;
+      }
+    }
+    &Card {
+      width: calc(50% - 10px);
+      margin: 15px 5px;
+    }
+  }
+}
+// 750px
+@mixin project-sm-md {
+  .project {
+  }
+}
+// 650px
+@mixin project-sm-md-extra {
+  .project {
+    padding: 40px 0 60px;
+    &__inner {
+      &-row {
+        margin: 0;
+        flex-direction: column;
+      }
+      &-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 -4px;
+        width: calc(100% + 8px);
+      }
+      &-selects {
+        width: calc(50% - 8px);
+        flex-direction: column;
+        margin: 0;
+      }
+      &-filters {
+        width: calc(50% - 8px);
+        flex-direction: column;
+
+      }
+      &-foot {
+        button {
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          &::before {
+            width: 12px;
+            height: 8px;
+          }
+        }
+      }
+      .select {
+        width: 100%;
+        max-width: unset;
+        margin: 4px;
+      }
+      .button {
+        margin: 4px;
+      }
+    }
+    &Card {
+      width: 100%;
+      margin: 0 0 20px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// 540px
+@mixin project-xsm-sm {
+  .project {
+  }
+}
+// 440px
+@mixin project-xxsm-xsm {
+  .project {
+  }
+}

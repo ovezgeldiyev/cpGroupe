@@ -1,0 +1,344 @@
+// 1830px
+@include xxxxxlg-xxxxxxlg {
+  @include news-xxxxxlg-xxxxxxlg;
+}
+// 1450px
+@include xxxxlg-xxxxxlg {
+  h1,
+  h2 {
+    font-size: 70px;
+  }
+  .select {
+    &::before {
+      width: 8px;
+      height: 8px;
+      right: 18px;
+    }
+    select {
+      padding: 10px 30px 10px 18px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .button {
+    min-width: 120px;
+    font-size: 16px;
+    padding: 10px 18px;
+    line-height: 20px;
+  }
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1,
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 120%;
+    &.big {
+      font-size: 26px;
+    }
+    &.mid {
+      font-size: 22px;
+    }
+    &.sm {
+      font-size: 18px;
+    }
+  }
+  body {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .lang {
+    a {
+      font-size: 16px;
+    }
+    hr {
+      height: 16px;
+    }
+  }
+  .link {
+    font-size: 20px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .main {
+    &.big {
+      padding-top: 94.56px;
+    }
+  }
+  @include header-xxxlg-xxxxlg;
+  @include nav-xxxlg-xxxxlg;
+  @include hero-xxxlg-xxxxlg;
+  @include work-xxxlg-xxxxlg;
+  @include history-xxxlg-xxxxlg;
+  @include news-xxxlg-xxxxlg;
+  @include project-xxxlg-xxxxlg;
+  @include about-xxxlg-xxxxlg;
+  @include jobs-xxxlg-xxxxlg;
+  @include founders-xxxlg-xxxxlg;
+  @include contact-xxxlg-xxxxlg;
+  @include offices-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  h1,
+  h2 {
+    font-size: 55px;
+  }
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 22px;
+  }
+  @include hero-xlg-xxlg;
+  @include work-xlg-xxlg;
+  @include history-xlg-xxlg;
+  @include project-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include jobs-xlg-xxlg;
+  @include founders-xlg-xxlg;
+  @include offices-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  h6 {
+    font-size: 20px;
+    &.sm {
+      font-size: 16px;
+    }
+  }
+  p {
+    font-size: 18px;
+    &.big {
+      font-size: 22px;
+    }
+    &.mid {
+      font-size: 20px;
+    }
+    &.sm {
+      font-size: 16px;
+    }
+  }
+  body {
+    font-size: 18px;
+  }
+  .lang {
+    padding-top: 20px;
+    a {
+      font-size: 20px;
+    }
+    hr {
+      height: 20px;
+    }
+  }
+  .link {
+    font-size: 18px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .main {
+    &.big {
+      padding-top: 81.47px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include history-lg-xlg;
+  @include news-lg-xlg;
+  @include project-lg-xlg;
+  @include contact-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  @include hero-md-lg;
+  @include history-md-lg;
+  @include join-md-lg;
+  @include project-md-lg;
+  @include about-md-lg;
+  @include jobs-md-lg;
+  @include founders-md-lg;
+  @include offices-md-lg;
+  @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include hero-sm-md;
+  @include work-sm-md;
+  @include history-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+  @include work-sm-md-extra;
+  @include news-sm-md-extra;
+  @include project-sm-md-extra;
+  @include history-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+    &.sm {
+      font-size: 15px;
+    }
+  }
+  p {
+    font-size: 16px;
+    &.big {
+      font-size: 20px;
+    }
+    &.mid {
+      font-size: 18px;
+    }
+    &.sm {
+      font-size: 14px;
+    }
+  }
+  body {
+    font-size: 16px;
+  }
+  .link {
+    font-size: 16px;
+    padding-right: 15px;
+    svg {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .main {
+    &.big {
+      padding-top: 64.38px;
+    }
+  }
+  .select {
+    &::before {
+      width: 7px;
+      height: 7px;
+      right: 15px;
+      border-width: 1px;
+    }
+    select {
+      padding: 8px 28px 8px 15px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .button {
+    min-width: 120px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 7px 15px;
+    &.uniq {
+      font-size: 16px;
+      padding: 10px 24px;
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include history-xsm-sm;
+  @include join-xsm-sm;
+  @include about-xsm-sm;
+  @include jobs-xsm-sm;
+  @include founders-xsm-sm;
+  @include contact-xsm-sm;
+  @include offices-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    &.big {
+      font-size: 18px;
+    }
+    &.mid {
+      font-size: 16px;
+    }
+  }
+  @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

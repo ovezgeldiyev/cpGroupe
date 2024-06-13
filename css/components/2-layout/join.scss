@@ -1,0 +1,104 @@
+.join {
+  padding: 135px 0 156px;
+  position: relative;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-color: $black;
+      opacity: 0.3;
+    }
+    img {
+      @include fullImage;
+    }
+  }
+  &__inner {
+    color: $white;
+    &-title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    h3 {
+      color: $white;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+// 1380px
+@mixin join-xxxlg-xxxxlg {
+  .join {
+  }
+}
+// 1250px
+@mixin join-xlg-xxlg-extra {
+  .join {
+  }
+}
+// 1180px
+@mixin join-xlg-xxlg {
+  .join {
+  }
+}
+// 1024px
+@mixin join-lg-xlg {
+  .join {
+  }
+}
+// 930px
+@mixin join-md-lg {
+  .join {
+    padding: 100px 0;
+    &__inner{
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+  }
+}
+// 750px
+@mixin join-sm-md {
+  .join {
+  }
+}
+// 650px
+@mixin join-sm-md-extra {
+  .join {
+  }
+}
+// 540px
+@mixin join-xsm-sm {
+  .join {
+    padding: 70px 0;
+    &__inner{
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+  }
+}
+// 440px
+@mixin join-xxsm-xsm {
+  .join {
+  }
+}
